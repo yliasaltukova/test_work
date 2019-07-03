@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Справочник мебели</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="regist">
+
+        <div  class="login-form">
+
+                <h1>Добро пожаловать!</h1>
+               
+                <form action="http://yliasaltukova.com/form/directory/">
+               
+                <input type="text" name="username" placeholder="Логин">
+               
+                <input type="password" name="password" placeholder="Пароль">
+               
+                <input type="submit" value="Вход">
+               
+                </form>
+               
+               </div>
+        </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+            $(document).ready(function() {
+            
+             // Check if JavaScript is enabled
+             $('body').addClass('js');
+            
+             // Click function
+             $('.login-form span').on('click', function() {
+            
+             if ($(this).children('input').attr('checked')) {
+             $(this).children('input').attr('checked', false);
+             $(this).removeClass('checked');
+             }
+            
+             else {
+             $(this).children('input').attr('checked', true);
+             $(this).addClass('checked');
+             }
+            });
+            });
+            </script>
+
+        
+
+</body>
